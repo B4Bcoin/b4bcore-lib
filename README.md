@@ -1,20 +1,20 @@
-Ravencore Library
+B4Bcore Library
 =======
 
-A pure and powerful JavaScript Ravencoin library.
+A pure and powerful JavaScript B4Bcoin library.
 
 ## Principles
 
-Ravencoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Ravencoin network allows for highly resilient Ravencoin infrastructure, and the developer community needs reliable, open-source tools to implement Ravencoin apps and services.
+B4Bcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Ravencoin network allows for highly resilient B4Bcoin infrastructure, and the developer community needs reliable, open-source tools to implement Ravencoin apps and services.
 
 ## Get Started
 
 ```
-npm install ravencore-lib
+npm install b4bcore-lib
 ```
 
 ```
-bower install ravencore-lib
+bower install b4bcore-lib
 ```
 
 ## Examples
@@ -40,19 +40,19 @@ Please send pull requests for bug fixes, code optimization, and ideas for improv
 
 ## Building the Browser Bundle
 
-To build a ravencore-lib full bundle for the browser:
+To build a b4bcore-lib full bundle for the browser:
 
 ```sh
 gulp browser
 ```
 
-This will generate files named `ravencore-lib.js` and `ravencore-lib.min.js`.
+This will generate files named `b4bcore-lib.js` and `b4bcore-lib.min.js`.
 
 ## Development & Tests
 
 ```sh
-git clone https://github.com/RavenDevKit/ravencore-lib
-cd ravencore-lib
+git clone https://github.com/B4Bcoin/b4bcore-lib
+cd b4bcore-lib
 npm install
 ```
 
