@@ -6,12 +6,12 @@ var should = require('chai').should();
 var expect = require('chai').expect;
 var _ = require('lodash');
 
-var ravencore = require('../..');
-var Transaction = ravencore.Transaction;
-var TransactionSignature = ravencore.Transaction.Signature;
-var Script = ravencore.Script;
-var PrivateKey = ravencore.PrivateKey;
-var errors = ravencore.errors;
+var b4bcore = require('../..');
+var Transaction = b4bcore.Transaction;
+var TransactionSignature = b4bcore.Transaction.Signature;
+var Script = b4bcore.Script;
+var PrivateKey = b4bcore.PrivateKey;
+var errors = b4bcore.errors;
 
 describe('TransactionSignature', function() {
 

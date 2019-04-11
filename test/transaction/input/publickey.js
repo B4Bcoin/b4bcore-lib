@@ -1,9 +1,9 @@
 'use strict';
 
 var should = require('chai').should();
-var ravencore = require('../../..');
-var Transaction = ravencore.Transaction;
-var PrivateKey = ravencore.PrivateKey;
+var b4bcore = require('../../..');
+var Transaction = b4bcore.Transaction;
+var PrivateKey = b4bcore.PrivateKey;
 
 describe('PublicKeyInput', function() {
 

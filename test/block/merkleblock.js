@@ -2,12 +2,12 @@
 
 var should = require('chai').should();
 
-var ravencore = require('../..');
+var b4bcore = require('../..');
 var Hash = require('../../lib/crypto/hash');
-var MerkleBlock = ravencore.MerkleBlock;
-var BufferReader = ravencore.encoding.BufferReader;
-var BufferWriter = ravencore.encoding.BufferWriter;
-var Transaction = ravencore.Transaction;
+var MerkleBlock = b4bcore.MerkleBlock;
+var BufferReader = b4bcore.encoding.BufferReader;
+var BufferWriter = b4bcore.encoding.BufferWriter;
+var Transaction = b4bcore.Transaction;
 var data = require('../data/merkleblocks.js');
 var transactionVector = require('../data/tx_creation');
 

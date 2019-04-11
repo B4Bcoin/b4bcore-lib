@@ -2,8 +2,8 @@
 
 var Transaction = require('../../lib/transaction');
 
-var vectors_valid = require('../data/ravend/tx_valid.json');
-var vectors_invalid = require('../data/ravend/tx_invalid.json');
+var vectors_valid = require('../data/b4bd/tx_valid.json');
+var vectors_invalid = require('../data/b4bd/tx_invalid.json');
 
 describe('Transaction deserialization', function() {
 

@@ -5,13 +5,13 @@ var should = require('chai').should();
 var expect = require('chai').expect;
 var _ = require('lodash');
 
-var ravencore = require('../../..');
-var Transaction = ravencore.Transaction;
-var PrivateKey = ravencore.PrivateKey;
-var Address = ravencore.Address;
-var Script = ravencore.Script;
-var Signature = ravencore.crypto.Signature;
-var MultiSigInput = ravencore.Transaction.Input.MultiSig;
+var b4bcore = require('../../..');
+var Transaction = b4bcore.Transaction;
+var PrivateKey = b4bcore.PrivateKey;
+var Address = b4bcore.Address;
+var Script = b4bcore.Script;
+var Signature = b4bcore.crypto.Signature;
+var MultiSigInput = b4bcore.Transaction.Input.MultiSig;
 
 describe('MultiSigInput', function() {
 
