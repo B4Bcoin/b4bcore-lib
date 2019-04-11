@@ -30,6 +30,7 @@ bower install b4bcore-lib
 * [Spend from a 2-of-2 multisig P2SH address](https://github.com/B4Bcoin/b4bcore-lib/blob/master/docs/examples.md#spend-from-a-2-of-2-multisig-p2sh-address)
 
 
+
 ## Security
 
 We're using b4bcore in production, but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
