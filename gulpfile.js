@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var ravencoreTasks = require('ravencore-build');
+var b4bcoreTasks = require('b4bcore-build');
 
-ravencoreTasks('lib');
+b4bcoreTasks('lib');
 gulp.task('default', ['lint', 'test', 'browser', 'coverage']);

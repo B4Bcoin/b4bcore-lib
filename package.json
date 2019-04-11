@@ -1,7 +1,7 @@
 {
-  "name": "@ravendevkit/ravencore-lib",
+  "name": "@B4Bcoin/b4bcore-lib",
   "version": "1.0.4",
-  "description": "A pure and powerful JavaScript Ravencoin library.",
+  "description": "A pure and powerful JavaScript B4Bcoin library.",
   "author": "Under",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "test": "gulp test",
     "coverage": "gulp coverage",
     "build": "gulp",
-    "watch": "watchify --require ./index.js:ravencore-lib -o ravencore-lib.js"
+    "watch": "watchify --require ./index.js:b4bcore-lib -o b4bcore-lib.js"
   },
   "contributors": [
     {
@@ -18,7 +18,8 @@
     }
   ],
   "keywords": [
-    "ravencoin",
+    "B4Bcoin",
+    "b4bcoin",
     "transaction",
     "address",
     "p2p",
@@ -35,13 +36,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/RavenDevKit/ravencore-lib.git"
+    "url": "https://github.com/B4Bcoin/b4bcore-lib.git"
   },
   "browser": {
     "request": "browser-request"
   },
   "dependencies": {
-    "@ravendevkit/node-x16r": "^1.0.2",
+    "@B4Bcoin/node-x16r": "git+https://git@github.com/B4Bcoin/node-x16r.git",
+    "acorn": "^6.1.1",
     "bn.js": "=2.0.4",
     "browser-request": "^0.3.3",
     "bs58": "=2.0.0",
@@ -56,7 +58,7 @@
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.9.1",
-    "ravencore-build": "RavenDevKit/ravencore-build",
+    "b4bcore-build": "git+https://git@github.com/B4Bcoin/b4bcore-build",
     "sinon": "^1.13.0",
     "watchify": "^3.11.0"
   },

@@ -1,62 +1,62 @@
 'use strict';
 
-var ravencore = module.exports;
+var b4bcore = module.exports;
 
 // module information
-ravencore.version = 'v' + require('./package.json').version;
-ravencore.versionGuard = function(version) {
+b4bcore.version = 'v' + require('./package.json').version;
+b4bcore.versionGuard = function(version) {
   if (version !== undefined) {
-    var message = 'More than one instance of ravencore-lib found. ' +
-      'Please make sure to require ravencore-lib and check that submodules do' +
-      ' not also include their own ravencore-lib dependency.';
+    var message = 'More than one instance of b4bcore-lib found. ' +
+      'Please make sure to require b4bcore-lib and check that submodules do' +
+      ' not also include their own b4bcore-lib dependency.';
     throw new Error(message);
   }
 };
-ravencore.versionGuard(global._ravencore);
-global._ravencore = ravencore.version;
+b4bcore.versionGuard(global._b4bcore);
+global._b4bcore = b4bcore.version;
 
 // crypto
-ravencore.crypto = {};
-ravencore.crypto.BN = require('./lib/crypto/bn');
-ravencore.crypto.ECDSA = require('./lib/crypto/ecdsa');
-ravencore.crypto.Hash = require('./lib/crypto/hash');
-ravencore.crypto.Random = require('./lib/crypto/random');
-ravencore.crypto.Point = require('./lib/crypto/point');
-ravencore.crypto.Signature = require('./lib/crypto/signature');
+b4bcore.crypto = {};
+b4bcore.crypto.BN = require('./lib/crypto/bn');
+b4bcore.crypto.ECDSA = require('./lib/crypto/ecdsa');
+b4bcore.crypto.Hash = require('./lib/crypto/hash');
+b4bcore.crypto.Random = require('./lib/crypto/random');
+b4bcore.crypto.Point = require('./lib/crypto/point');
+b4bcore.crypto.Signature = require('./lib/crypto/signature');
 
 // encoding
-ravencore.encoding = {};
-ravencore.encoding.Base58 = require('./lib/encoding/base58');
-ravencore.encoding.Base58Check = require('./lib/encoding/base58check');
-ravencore.encoding.BufferReader = require('./lib/encoding/bufferreader');
-ravencore.encoding.BufferWriter = require('./lib/encoding/bufferwriter');
-ravencore.encoding.Varint = require('./lib/encoding/varint');
+b4bcore.encoding = {};
+b4bcore.encoding.Base58 = require('./lib/encoding/base58');
+b4bcore.encoding.Base58Check = require('./lib/encoding/base58check');
+b4bcore.encoding.BufferReader = require('./lib/encoding/bufferreader');
+b4bcore.encoding.BufferWriter = require('./lib/encoding/bufferwriter');
+b4bcore.encoding.Varint = require('./lib/encoding/varint');
 
 // utilities
-ravencore.util = {};
-ravencore.util.buffer = require('./lib/util/buffer');
-ravencore.util.js = require('./lib/util/js');
-ravencore.util.preconditions = require('./lib/util/preconditions');
+b4bcore.util = {};
+b4bcore.util.buffer = require('./lib/util/buffer');
+b4bcore.util.js = require('./lib/util/js');
+b4bcore.util.preconditions = require('./lib/util/preconditions');
 
 // errors thrown by the library
-ravencore.errors = require('./lib/errors');
+b4bcore.errors = require('./lib/errors');
 
-// main ravencoin library
-ravencore.Address = require('./lib/address');
-ravencore.Asset = require('./lib/asset');
-ravencore.Block = require('./lib/block');
-ravencore.MerkleBlock = require('./lib/block/merkleblock');
-ravencore.BlockHeader = require('./lib/block/blockheader');
-ravencore.HDPrivateKey = require('./lib/hdprivatekey.js');
-ravencore.HDPublicKey = require('./lib/hdpublickey.js');
-ravencore.Networks = require('./lib/networks');
-ravencore.Opcode = require('./lib/opcode');
-ravencore.PrivateKey = require('./lib/privatekey');
-ravencore.PublicKey = require('./lib/publickey');
-ravencore.Script = require('./lib/script');
-ravencore.Transaction = require('./lib/transaction');
-ravencore.URI = require('./lib/uri');
-ravencore.Unit = require('./lib/unit');
+// main b4bcoin library
+b4bcore.Address = require('./lib/address');
+b4bcore.Asset = require('./lib/asset');
+b4bcore.Block = require('./lib/block');
+b4bcore.MerkleBlock = require('./lib/block/merkleblock');
+b4bcore.BlockHeader = require('./lib/block/blockheader');
+b4bcore.HDPrivateKey = require('./lib/hdprivatekey.js');
+b4bcore.HDPublicKey = require('./lib/hdpublickey.js');
+b4bcore.Networks = require('./lib/networks');
+b4bcore.Opcode = require('./lib/opcode');
+b4bcore.PrivateKey = require('./lib/privatekey');
+b4bcore.PublicKey = require('./lib/publickey');
+b4bcore.Script = require('./lib/script');
+b4bcore.Transaction = require('./lib/transaction');
+b4bcore.URI = require('./lib/uri');
+b4bcore.Unit = require('./lib/unit');
 
 // Insight-related
 // use XMLHttpRequest in browser window if available, otherwise use wrapper
@@ -68,17 +68,17 @@ if (typeof window !== 'undefined' && typeof window.XMLHttpRequest === 'function'
   // console.log("setting XMLHttpRequest in global");
   global.XMLHttpRequest = XMLHttpRequest;
 }
-ravencore.Insight = require('./lib/insight');
+b4bcore.Insight = require('./lib/insight');
 
 // dependencies, subject to change
-ravencore.deps = {};
-ravencore.deps.bnjs = require('bn.js');
-ravencore.deps.bs58 = require('bs58');
-ravencore.deps.Buffer = Buffer;
-ravencore.deps.elliptic = require('elliptic');
+b4bcore.deps = {};
+b4bcore.deps.bnjs = require('bn.js');
+b4bcore.deps.bs58 = require('bs58');
+b4bcore.deps.Buffer = Buffer;
+b4bcore.deps.elliptic = require('elliptic');
 // this may be undefined -- no x16r available to browser bundle
-ravencore.deps.nodeX16r = require('@ravendevkit/node-x16r');
-ravencore.deps._ = require('lodash');
+b4bcore.deps.nodeX16r = require('@B4Bcoin/node-x16r');
+b4bcore.deps._ = require('lodash');
 
 // Internal usage, exposed for testing/advanced tweaking
-ravencore.Transaction.sighash = require('./lib/transaction/sighash');
+b4bcore.Transaction.sighash = require('./lib/transaction/sighash');
