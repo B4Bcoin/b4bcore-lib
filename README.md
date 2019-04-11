@@ -5,7 +5,7 @@ A pure and powerful JavaScript B4Bcoin library.
 
 ## Principles
 
-B4Bcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Ravencoin network allows for highly resilient B4Bcoin infrastructure, and the developer community needs reliable, open-source tools to implement Ravencoin apps and services.
+B4Bcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the B4Bcoin network allows for highly resilient B4Bcoin infrastructure, and the developer community needs reliable, open-source tools to implement B4Bcoin apps and services.
 
 ## Get Started
 
