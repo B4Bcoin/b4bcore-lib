@@ -58,7 +58,7 @@
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.9.1",
-    "b4bcore-build": "git+https://git@github.com/B4Bcoin/b4bcore-build",
+    "@B4Bcoin/b4bcore-build": "git+https://git@github.com/B4Bcoin/b4bcore-build",
     "sinon": "^1.13.0",
     "watchify": "^3.11.0"
   },
