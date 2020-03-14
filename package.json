@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@B4Bcoin/node-x16r": "git+https://git@github.com/B4Bcoin/node-x16r.git",
-    "acorn": "^6.1.1",
+    "acorn": "^6.4.1",
     "bn.js": "=2.0.4",
     "browser-request": "^0.3.3",
     "bs58": "=2.0.0",
